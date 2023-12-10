@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배열</title>
+  </head>
+  <body>
+    <h2>배열</h2>
+    <script>
+      /*
+            배열 만들기
+            var arr = [];
+
+            var arr = new Array();
+            배열은 0 = 첫번째
+        */
+
+      /*
+      var fruits = [];
+      fruits[0] = "사과";
+      fruits[1] = "배";
+      fruits[2] = "바나나";
+      */
+
+      var fruits = ["가과", "배", "바나나"];
+
+      var amount = fruits.length;
+      var newStr = fruits.join("/");
+      //var newArr = fruits.reverse();
+      var newArr2 = fruits.sort(function (a, b) {
+        /* sort는 숫자의 배열만 sorting이 됩니다. */
+        if (a > b) return -1;
+        else if (b > a) return 1;
+        else return 0; //내림차순
+      });
+      var nums = [5, 10, 1, 20, 50];
+      nums.sort(function (a, b) {
+        if (a > b) {
+          return 1;
+        } else if (a < b) {
+          return -1;
+        } else {
+          return 0;
+        } //오름차순
+      });
+
+      document.write(fruits + "<br>");
+      document.write(fruits[0] + "<br>");
+      document.write(amount + "<br>");
+      document.write(newStr + "<br>");
+      //document.write(newArr + "<br>");
+      document.write(newArr2 + "<br>");
+      document.write("숫자는 변경되어 정렬됨 : " + nums);
+    </script>
+    <h2>값 추가하기 - push</h2>
+    <p>기존의 값 뒤에 추가한다.</p>
+    <script>
+      var beers = ["하이네켄", "코로나", "스텔라", "카스"];
+      beers.push("수제맥주", "제주비어");
+      document.write(beers);
+    </script>
+    <h2>값 앞에 추가하기 - unshift</h2>
+    <p>기존의 값 앞에 추가한다.</p>
+    <script>
+      var beers = ["하이네켄", "코로나", "스텔라", "카스"];
+      beers.unshift("수제맥주", "제주비어");
+      document.write(beers);
+    </script>
+    <h2>값 삭제하기 - pop</h2>
+    <p>기존의 맨뒤값 삭제한다.</p>
+    <script>
+      var beers = ["하이네켄", "코로나", "스텔라", "카스"];
+      beers.pop();
+      document.write(beers);
+    </script>
+    <h2>값 삭제하기 - pop</h2>
+    <p>기존의 맨앞값 삭제한다.</p>
+    <script>
+      var beers = ["하이네켄", "코로나", "스텔라", "카스"];
+      beers.shift();
+      document.write(beers);
+    </script>
+  </body>
+</html>

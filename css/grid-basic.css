@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #181818;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.color1 {
+  background-color: rgb(249, 215, 250);
+}
+.color2 {
+  background-color: rgb(107, 253, 94);
+}
+
+.color3 {
+  background-color: rgb(232, 247, 146);
+}
+
+.color4 {
+  background-color: rgb(180, 199, 255);
+}
+
+.color5 {
+  background-color: rgb(253, 158, 158);
+}
+.color6 {
+  background-color: rgb(249, 215, 250);
+}
+.color7 {
+  background-color: rgb(107, 253, 94);
+}
+
+.color8 {
+  background-color: rgb(232, 247, 146);
+}
+
+.color9 {
+  background-color: rgb(180, 199, 255);
+}
+
+.color10 {
+  background-color: rgb(253, 158, 158);
+}

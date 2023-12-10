@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>문자열</h2>
+    <script>
+      var str = "hello world";
+      var str1 = "javascript";
+      var str2 = str.indexOf("worlds");
+
+      var newStr1 = str.concat(str1);
+      var n = str.charAt(2);
+      console.log(str2);
+    </script>
+
+    <h2>타이머</h2>
+    <script>
+      //setTimeout(할일, 시간);
+      //시간이 지나면 할일 = 함수
+      //할일 = function(){실제로 할일}
+      //3초 3000
+      //실제로 할일 = alert("힘들죠")
+
+      //clearTimeout (할일의 이름)
+
+      var timer = setTimeout(function () {
+        alert("힘들죠");
+      }, 3000);
+
+      clearTimeout(timer);
+
+      /* 일정시간마다 할일*/
+      /*
+      setInterval(할일, 시간)
+      claerInterval(이름)
+      */
+
+      var timer2 = setInterval(function () {
+        alert("힘들죠");
+      }, 3000);
+    </script>
+  </body>
+</html>

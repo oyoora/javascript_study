@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Javascript Basic Event</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+        tenetur sapiente commodi aut a distinctio quaerat minima ducimus? Eaque
+        ad ipsa dolorem saepe facilis in suscipit commodi minima, odio omnis.
+      </p>
+      <button id="submit" onclick="">Click me</button>
+    </div>
+    <script>
+      var btn = document.getElementById("submit"),
+        container = document.querySelector(".container");
+      //할일(함수)은 무조선 function(){}
+      btn.addEventListener("click", function () {
+        //클릭하면 실제로 할일
+        btn.style.color = "red";
+        console.log("버튼이 클릭되었습니다");
+      });
+
+      container.addEventListener("mouseenter", function () {
+        console.log("마우스가 들어왔어요");
+      });
+      container.addEventListener("mouseleave", function () {
+        console.log("마우스가 나갔음");
+      });
+      window.addEventListener("keydown", function (event) {
+        console.log(event.key);
+        console.log(event.keyCode);
+      });
+    </script>
+  </body>
+</html>
